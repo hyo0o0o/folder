@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* 주석처리 */
+*{margin: 0; padding: 0;}
+h1{color: blue;}
+
+ul, li, ol{list-style: none;}
+
+li{
+    /* 나(li)의 공간:넓이 + 패딩 + 선 */
+    /* 나(li)의 공간:300 + (20+20) + (1+1) */
+    /* border: 1px solid blue; */
+    /* border: border-width border-style border-color; */
+    /* border-width: 1px;
+    border-style:double;
+    border-color:coral; */
+    /* border-top: 1px solid blue; */
+    /* border-left: 1px solid blue; */
+    /* border-right: 1px solid blue; */
+    border-bottom: 1px solid blue;
+    padding: 20px;
+    width: 300px;
+    box-sizing: border-box; /*공간안에 padding과 border까지 포함*/
+    margin: 20px;  /* 마진은 li밖의 공간 */
+
+}
+
+.m{}
+.m span{border: 1px double blue;
+margin: 10px}
+
+.mp{margin-top: 30px;}
+.mp .one{border: 1px solid red;
+width: 200px;
+padding: 20px;
+/* 
+padding-top: 20px;
+padding-bottom: 20px;
+padding-left: 20px;
+padding-right: 20px; */
+
+padding: 10px 20px 30px 40px;
+/* padding: 위 오른쪽 아래 왼쪽; */
+padding: 10px 20px 30px; /*위 좌우 아래*/
+padding: 10px 20px; /*상하 좌우*/
+padding: 10px; /*상좌하우*/
+}
+.mp .two{border: 1px solid green;
+width: 200px;
+/* margin-left: auto;
+margin-right: auto; */
+margin: 0 auto; /*상하 좌우*/
+
+}
+
+
+.dl{margin-top: 30px;}
+.dl dl{border-top: 1px solid gray;}
